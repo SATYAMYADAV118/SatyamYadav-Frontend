@@ -36,6 +36,25 @@ RocketPopup.js and CapsulePopup.js
     Popup also includes a photo gallery with clickable images and a Wikipedia link.
     The "Back to Rockets" or "Back to Capsules" link allows users to return to the main page.
 
+### Features
+
+    Modern and responsive design.
+    Filter rockets or capsules by Status, Type, and Reuse Count.
+    Search by Serial Number to find specific items.
+    Paginated data grid for easy navigation.
+    Detailed pop-up modals for each item.
+    Toggle between metric and imperial units.
+    Optimized query for fast loading.
+    Semantic HTML and SEO best practices.
+
+### Technologies Used
+
+    React: Frontend library for building user interfaces.
+    Tailwind CSS: Utility-first CSS framework for styling.
+    State Context API: Managing global state and data sharing.
+    REST API (PHP): For fetching and sending data between SpaceX and the app.
+    Jest: Testing framework for unit testing components.
+
 ### Conclusion
 
 The SpaceX Data Sharing App aims to provide an intuitive and visually appealing way for users to explore information about SpaceX rockets and capsules. It uses React to create a seamless user experience, fetches data from the SpaceX API, and displays it using reusable components and responsive design techniques.
