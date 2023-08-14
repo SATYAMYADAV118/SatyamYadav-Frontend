@@ -1,33 +1,9 @@
-Project Overview
+# Project Overview
 
 The SpaceX Data Sharing App is a React-based web application that allows users to explore information about SpaceX rockets and capsules. It provides a modern and responsive user interface, along with a search form and a data grid for easy navigation and browsing of the SpaceX data.
 Project Structure
 
-The project's file structure might look something like this:
-spacex-data-app/
-├── public/
-│   ├── index.html
-│   ├── ...
-├── src/
-│   ├── components/
-│   │   ├── Loading.js
-│   │   ├── ...
-│   ├── hooks/
-│   │   ├── useFetch.js
-│   │   ├── ...
-│   ├── pages/
-│   │   ├── Rockets.js
-│   │   ├── RocketPopup.js
-│   │   ├── Capsules.js
-│   │   ├── CapsulePopup.js
-│   ├── App.js
-│   ├── index.js
-│   ├── ...
-├── README.md
-├── package.json
-├── ...
-
-In this structure:
+### In this structure:
 
     public/: Contains the public assets and the main index.html file.
     src/: Contains the source code of the React app.
@@ -37,7 +13,7 @@ In this structure:
     App.js: The entry point of the app that sets up routing and layout.
     index.js: The main file that renders the React app.
 
-File Overview
+### File Overview
 Rockets.js and RocketPopup.js
 
     Rockets.js is the main page for displaying SpaceX rockets.
@@ -60,7 +36,7 @@ RocketPopup.js and CapsulePopup.js
     Popup also includes a photo gallery with clickable images and a Wikipedia link.
     The "Back to Rockets" or "Back to Capsules" link allows users to return to the main page.
 
-Conclusion
+### Conclusion
 
 The SpaceX Data Sharing App aims to provide an intuitive and visually appealing way for users to explore information about SpaceX rockets and capsules. It uses React to create a seamless user experience, fetches data from the SpaceX API, and displays it using reusable components and responsive design techniques.
 
