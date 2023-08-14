@@ -133,7 +133,9 @@ export default function Capsules() {
                 >
                   <option value="">All</option>
                   <option value="Dragon 1.0">Dragon 1.0</option>
-                  <option value="Dragon 2">Dragon 2</option>
+                  <option value="Dragon 1.1">Dragon 1.1</option>
+                  <option value="Dragon 2.0">Dragon 2.0</option>
+                  <option value="Dragon 2.1">Dragon 2.1</option>
                 </select>
               </label>
               <label
