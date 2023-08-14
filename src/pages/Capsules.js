@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Loading } from "../components";
+// import { Loading } from "../components";
+import Loading from '../components/LoadingState';
 
 export default function Capsules() {
   const [capsules, setCapsules] = useState([]);
@@ -7,7 +8,7 @@ export default function Capsules() {
   const [filterStatus, setFilterStatus] = useState("");
   const [filterType, setFilterType] = useState("");
   const [filterReuseCount, setFilterReuseCount] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [Loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [capsulesPerPage] = useState(10); // Number of capsules per page
   const [showData, setShowData] = useState(false);

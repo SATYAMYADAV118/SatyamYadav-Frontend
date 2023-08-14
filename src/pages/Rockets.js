@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import useFetch from "../hooks/useFetch";
-import { Loading } from "../components";
+// import { Loading } from "../components/LoadingState";
+import Loading from '../components/LoadingState';
 import RocketPopup from "../pages/RocketPopup";
 
 export default function Rockets() {
   const [data] = useFetch("https://api.spacexdata.com/v4/rockets");
-  // const [data] = useFetch("http://localhost/spacex/test.php/rockets");this is for the php test
+  // const [data] = useFetch("http://localhost/spacex/test.php/rockets");this is for the php
 
 
   const [selectedRocket, setSelectedRocket] = useState(null);
