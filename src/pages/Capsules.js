@@ -20,7 +20,19 @@ export default function Capsules() {
   const fetchCapsules = async () => {
     setLoading(true);
 
+    // const requestOptions = {
+    //   method: 'GET',
+    //   headers: {
+    //     'Authorization': 'test123', // Replace with your actual token
+    //     'Content-Type': 'application/json'
+    //   }
+    // };
+
     const res = await fetch("https://api.spacexdata.com/v4/capsules");
+
+    // const res = await fetch("http://localhost/spacex/test.php/capsules", requestOptions);
+
+    
     const data = await res.json();
 
     setLoading(false);
