@@ -1,3 +1,69 @@
+Project Overview
+
+The SpaceX Data Sharing App is a React-based web application that allows users to explore information about SpaceX rockets and capsules. It provides a modern and responsive user interface, along with a search form and a data grid for easy navigation and browsing of the SpaceX data.
+Project Structure
+
+The project's file structure might look something like this:
+spacex-data-app/
+├── public/
+│   ├── index.html
+│   ├── ...
+├── src/
+│   ├── components/
+│   │   ├── Loading.js
+│   │   ├── ...
+│   ├── hooks/
+│   │   ├── useFetch.js
+│   │   ├── ...
+│   ├── pages/
+│   │   ├── Rockets.js
+│   │   ├── RocketPopup.js
+│   │   ├── Capsules.js
+│   │   ├── CapsulePopup.js
+│   ├── App.js
+│   ├── index.js
+│   ├── ...
+├── README.md
+├── package.json
+├── ...
+
+In this structure:
+
+    public/: Contains the public assets and the main index.html file.
+    src/: Contains the source code of the React app.
+        components/: Reusable components like Loading, Button, etc.
+        hooks/: Custom hooks like useFetch for data fetching.
+        pages/: Main components that represent different sections of the app.
+    App.js: The entry point of the app that sets up routing and layout.
+    index.js: The main file that renders the React app.
+
+File Overview
+Rockets.js and RocketPopup.js
+
+    Rockets.js is the main page for displaying SpaceX rockets.
+    It fetches data from the SpaceX API using the useFetch hook and displays it in a data grid format.
+    Each rocket is rendered as a card with basic information and a "Read More" button.
+    Clicking the "Read More" button opens a popup (RocketPopup.js) that displays detailed information about the selected rocket.
+
+Capsules.js and CapsulePopup.js
+
+    Similarly, Capsules.js displays SpaceX capsules information.
+    It follows a similar pattern to Rockets.js, showing capsule data in a data grid.
+    Clicking the "Read More" button opens a popup (CapsulePopup.js) to show capsule details.
+
+RocketPopup.js and CapsulePopup.js
+
+    Both popup components (RocketPopup.js and CapsulePopup.js) follow a similar structure.
+    They display detailed information about a selected rocket or capsule.
+    Information such as name, type, cost, company, success rate, etc., is displayed.
+    Users can toggle between metric and imperial units for measurements.
+    Popup also includes a photo gallery with clickable images and a Wikipedia link.
+    The "Back to Rockets" or "Back to Capsules" link allows users to return to the main page.
+
+Conclusion
+
+The SpaceX Data Sharing App aims to provide an intuitive and visually appealing way for users to explore information about SpaceX rockets and capsules. It uses React to create a seamless user experience, fetches data from the SpaceX API, and displays it using reusable components and responsive design techniques.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
